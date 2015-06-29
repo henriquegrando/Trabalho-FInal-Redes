@@ -60,6 +60,7 @@ void group_message() {
 		if(group[i] == 1)
 		{
 			n = write(my_contact.contacts[i].socket, buffer_write, strlen(buffer_write));
+      group[i] = 0;
 		}
 	}
 }
